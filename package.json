@@ -1,0 +1,19 @@
+{
+  "name": "@sha3dev/eslint-config-custom",
+  "version": "0.0.0",
+  "main": "src/index.js",
+  "devDependencies": {
+    "@sha3dev/tsconfig": "*",
+    "@typescript-eslint/parser": "*",
+    "eslint": "*",
+    "eslint-config-airbnb-base": "*",
+    "eslint-config-airbnb-typescript": "*",
+    "eslint-config-prettier": "*",
+    "eslint-config-turbo": "*",
+    "eslint-plugin-prettier": "*",
+    "eslint-plugin-tsdoc": "*",
+    "prettier": "*",
+    "typedoc": "*",
+    "typescript": "*"
+  }
+}
