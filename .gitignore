@@ -8,6 +8,11 @@ node_modules
 # testing
 coverage
 
+# next.js
+.next/
+out/
+build
+
 # misc
 .DS_Store
 *.pem
@@ -33,4 +38,4 @@ dist/**
 .next/**
 
 #trash
-./__trash__
+__trash__
