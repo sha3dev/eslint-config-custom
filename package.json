@@ -10,6 +10,7 @@
     "eslint-config-airbnb-typescript": "*",
     "eslint-config-prettier": "*",
     "eslint-config-turbo": "*",
+    "eslint-import-resolver-typescript": "^3.5.3",
     "eslint-plugin-prettier": "*",
     "eslint-plugin-tsdoc": "*",
     "prettier": "*",
