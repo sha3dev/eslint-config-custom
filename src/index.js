@@ -1,5 +1,10 @@
 module.exports = {
-  extends: ["airbnb-base", "airbnb-typescript/base", "turbo", "prettier"],
+  extends: [
+    "airbnb-base",
+    "airbnb-typescript/base",
+    "plugin:react-hooks/recommended",
+    "prettier"
+  ],
   plugins: ["prettier", "eslint-plugin-tsdoc"],
   settings: {
     "import/resolver": {
@@ -13,7 +18,8 @@ module.exports = {
     "import/no-extraneous-dependencies": [
       "error",
       { devDependencies: ["**/tests/**"] }
-    ]
+    ],
+    "import/extensions": ["error", "ignorePackages", { "": "never" }]
   },
   parserOptions: {
     project: "./tsconfig.json"

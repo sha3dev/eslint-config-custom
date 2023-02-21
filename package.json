@@ -12,6 +12,7 @@
     "eslint-config-turbo": "*",
     "eslint-import-resolver-typescript": "^3.5.3",
     "eslint-plugin-prettier": "*",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-tsdoc": "*",
     "prettier": "*",
     "typedoc": "*",
