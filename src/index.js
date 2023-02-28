@@ -1,11 +1,7 @@
 module.exports = {
-  extends: [
-    "airbnb-base",
-    "airbnb-typescript/base",
-    "plugin:react-hooks/recommended",
-    "prettier"
-  ],
-  plugins: ["prettier", "eslint-plugin-tsdoc"],
+  extends: ["airbnb-base", "airbnb-typescript/base", "prettier", "plugin:solid/typescript"],
+  parser: "@typescript-eslint/parser",
+  plugins: ["prettier", "solid"],
   settings: {
     "import/resolver": {
       typescript: {
@@ -15,13 +11,16 @@ module.exports = {
   },
   rules: {
     "import/prefer-default-export": "off",
-    "import/no-extraneous-dependencies": [
-      "error",
-      { devDependencies: ["**/tests/**"] }
-    ],
-    "import/extensions": ["error", "ignorePackages", { "": "never" }]
+    "import/no-extraneous-dependencies": ["error", { devDependencies: ["**/tests/**"] }],
+    "react/react-in-jsx-scope": "off",
+    "arrow-body-style": "off",
+    "import/extensions": "off",
+    "solid/reactivity": "off"
   },
   parserOptions: {
-    project: "./tsconfig.json"
+    project: "./tsconfig.json",
+    ecmaVersion: "latest",
+    sourceType: "module",
+    ecmaFeatures: { jsx: true }
   }
 };
