@@ -15,7 +15,10 @@ module.exports = {
     "react/react-in-jsx-scope": "off",
     "arrow-body-style": "off",
     "import/extensions": "off",
-    "solid/reactivity": "off"
+    "solid/reactivity": "off",
+    "no-underscore-dangle": "off",
+    "@typescript-eslint/naming-convention": "off",
+    "@typescript-eslint/no-throw-literal": "off"
   },
   parserOptions: {
     project: "./tsconfig.json",
